@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="piku.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Gopika's Nutrition Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>🍏 Gopika's Nutrition & Dietetics Portfolio 🍽️</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="centered">
+        <h2>🌟 About Me</h2>
+        <p>Hello! I'm Gopika, a passionate food nutritionist dedicated to helping people achieve their health goals through nutrition.</p>
+        <img src="assets/IMG-20240126-WA0149.jpg" alt="Gopika's Photo" class="profile-img">
+    </section>
+
+    <section id="services" class="centered">
+        <h2>🛠️ Services</h2>
+        <div class="service">
+            <i class="fas fa-apple-alt"></i>
+            <h3>Nutritional Counseling</h3>
+            <p>Personalized plans tailored to your dietary needs.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-carrot"></i>
+            <h3>Meal Planning</h3>
+            <p>Custom meal plans for balanced nutrition.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-blender"></i>
+            <h3>Cooking Workshops</h3>
+            <p>Learn to cook healthy and delicious meals!</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="centered">
+        <h2>📸 Gallery</h2>
+        <div class="gallery-images">
+            <img src="assets/Healthy Sprout Salad Recipe.jpeg" alt="Healthy Meal 1">
+            <img src="assets/Plant Based Everyday Meals _ Vegetarian Indian Thali.jpeg" alt="Healthy Meal 2">
+            <img src="assets/Dal palak (Lentil spinach curry) - Greenbowl2soul.jpeg" alt="Healthy Meal 3">
+        </div>
+    </section>
+
+    <section id="blogs" class="centered">
+        <h2>📝 Blogs</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3>Blog Post 1: The Importance of Hydration 💧</h3>
+                    <p>Staying hydrated is key to maintaining good health. Discover tips to improve your water intake.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Blog Post 2: Top 5 Superfoods for Your Diet 🌱</h3>
+                    <p>Learn about five superfoods that can enhance your nutrition and boost your energy levels.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Blog Post 3: Meal Prep Made Easy 🥗</h3>
+                    <p>Master the art of meal prepping with these simple steps for a healthier lifestyle.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="centered">
+        <h2>✉️ Contact Me</h2>
+        <p class="text-black">Email: <a href="mailto:kgopika431@gmail.com" class="text-blue-500 hover:text-blue-900">kgopika431@gmail.com</a></p>
+        <p class="text-black">Mobile: <a href="tel:+91 6282472416" class="text-blue-500 hover:text-blue-900">+91 6282472416</a></p>
+
+    </section>
+
+    <footer>
+        <p>© 2024 Gopika. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

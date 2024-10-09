@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center; /* Center text for all sections */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.service {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline-block; /* Use inline-block for centered services */
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center; /* Center gallery images */
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 600px; /* Set max width for the slider */
+    margin: auto; /* Center the slider */
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+.swiper-slide {
+    width: 300px; /* Set a fixed width for each slide */
+    height: 800px; /* Set a fixed height for each slide */
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin-right: 20px; /* Add space between slides */
+}
+
+.swiper-wrapper {
+    display: flex; /* Make sure slides are displayed in a row */
+}
+
+.swiper-slide:last-child {
+    margin-right: 0; /* Remove margin on the last slide */
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    color: #4CAF50; /* Change text color to match your theme */
+    border: 2px solid #4CAF50; /* Add a border */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px; /* Increase font size for better visibility */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.prev:hover, .next:hover {
+    background-color: #4CAF50; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.centered {
+    text-align: center; /* Center text for sections */
+}
+
+footer {
+    background-color: #4CAF50; /* Match the header color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Keep it at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+}
